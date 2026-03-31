@@ -56,12 +56,6 @@ document.querySelectorAll("a, button").forEach(el => {
   });
 });
 
-const form = document.querySelector(".contact-form");
-
-form.addEventListener("submit", () => {
-  alert("Message sent successfully 🚀");
-});
-
 const hamburger = document.getElementById('hamburger');
   const mobileMenu = document.getElementById('mobileMenu');
   hamburger.addEventListener('click', () => {
