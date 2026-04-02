@@ -36,7 +36,7 @@
       <li><a href="#home"><span class="kw-hash">#</span> Home</a></li>
       <li><a href="#about"><span class="kw-def">def</span> ME():</a></li>
       <li><a href="#skills"><span class="kw-cls">class</span> Skills:</a></li>
-      <li><a href="#projects"><span class="kw-pro">try</span> Projects:</a></li>
+      <li><a href="#projects"><span class="kw-pro">catch</span> Projects:</a></li>
       <li><a href="#interests"><span class="kw-for">import</span> Interests</a></li>
     </ul>
     <button class="nav-hamburger" id="hamburger" aria-label="menu">
@@ -49,7 +49,7 @@
     <a href="#home" onclick="closeMobile()"><span class="kw-hash">#</span> Home</a>
     <a href="#about" onclick="closeMobile()"><span class="kw-def">def</span> ME():</a>
     <a href="#skills" onclick="closeMobile()"><span class="kw-cls">class</span> Skills:</a>
-    <a href="#projects" onclick="closeMobile()"><span class="kw-pro">try</span> Projects:</a>
+    <a href="#projects" onclick="closeMobile()"><span class="kw-pro">catch</span> Projects:</a>
     <a href="#interests" onclick="closeMobile()"><span class="kw-for">import</span> Interests</a>
   </div>
 
@@ -66,24 +66,24 @@
           Learning &amp; Building
         </div>
 
-        <div class="hero-name">
-          <span class="ln-hi">hello():</span>
+        <div class="hero-name hero-line">
+          <span class="ln-hi ">hello():</span>
           I'm <span class="ln-first">Pranav</span><br>
-          <span class="ln-last">Sawant</span><span class="cursor"></span>
+          <span class="ln-last ">Sawant</span><span class="cursor"></span>
         </div>
 
-        <div class="hero-sub">
+        <div class="hero-sub hero-line">
           # Computer Engineering student &amp;<br>
-          # <span class="hl">Python Developer</span> in the making.
+          # <span class="hl ">Python Developer</span> in the making.
         </div>
 
-        <p class="hero-desc">
+        <p class="hero-desc hero-line">
           Passionate about <strong>Machine Learning</strong> and <strong>Computer Vision</strong>,
           building a strong foundation in Python and its ecosystem.
           I love turning data into insight and ideas into code.
         </p>
 
-        <div class="btns">
+        <div class="btns hero-line">
           <a href="mailto:pranavsawant621@gmail.com" class="btn-primary">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <rect x="2" y="4" width="20" height="16" rx="2" />
@@ -96,7 +96,7 @@
       </div>
 
       <!-- BIG HERO AVATAR -->
-      <div class="avatar-ring">
+      <div class="avatar-ring hero-line">
         <div class="energy-particles"></div>
 
         <div class="avatar-inner">
@@ -107,38 +107,34 @@
 
   <!-- ── ABOUT ── -->
   <section id="about">
-    <h2 class="section-title">
-      <span class="kw-def">def</span>&nbsp;<span style="color:var(--code)">ME</span><span
-        style="color:var(--muted)">()</span><span style="color:var(--muted)">:</span>
+    <h2 class="section-title type-title" data-text="Me():">
+      <span class="kw-def">def</span>&nbsp;
+       <span class="typing" style="color:var(--code)"></span>
+        <span class="cursor">_</span>
+        <span class="line"></span>
     </h2>
     <div class="about-grid">
       <div class="about-text">
-        <p>
-          Hey! I'm <strong>Pranav Sawant</strong>, a <strong>Computer Engineering student</strong> on an exciting
-          journey to become a Python developer. I enjoy writing clean, purposeful code and exploring how
-          technology can solve real-world problems.
-        </p>
-        <p>
-          My primary language is <strong>Python</strong>, and I'm steadily building expertise in its
-          data science and computer vision ecosystem — from crunching numbers with NumPy &amp; Pandas
-          to building image-processing pipelines with OpenCV.
-        </p>
-        <p>
-          I'm especially drawn to <strong>Machine Learning</strong> and <strong>Computer Vision</strong>,
-          fascinated by how machines can learn to see and understand the world. Currently honing my skills
-          and working on personal projects that blend these interests.
-        </p>
-        <div class="tag-row">
-          <span class="tag">Python</span>
-          <span class="tag">Computer Engineering</span>
-          <span class="tag green">ML Enthusiast</span>
-          <span class="tag green">Computer Vision</span>
-          <span class="tag orange">Student</span>
-        </div>
-        <!-- <div style="margin-top:26px;">
-        <a href="#" class="btn-outline" style="margin-left:0">📄 Resume</a>
-      </div> -->
-      </div>
+  <p>
+    Hey! I'm <strong>Pranav Sawant</strong>, a <strong>Computer Engineering Student</strong> with an interest in building practical systems using Python.
+  </p>
+
+  <p>
+    I enjoy working on projects that combine logic, data, and real-world applications, especially in areas like computer vision and basic machine learning.
+  </p>
+
+  <p>
+    Currently, I focus on improving my problem-solving skills and exploring how software can be used to automate tasks and make processes more efficient.
+  </p>
+
+  <div class="tag-row">
+    <span class="tag">Python</span>
+    <span class="tag">Computer Engineering</span>
+    <span class="tag green">Machine Learning</span>
+    <span class="tag green">Computer Vision</span>
+    <span class="tag orange">Student</span>
+  </div>
+</div>
 
       <div class="about-img-wrap">
         <div class="about-photo">
@@ -151,10 +147,11 @@
   <!-- ── SKILLS ── -->
   <section id="skills">
 
-    <h2 class="section-title">
+    <h2 class="section-title type-title" data-text="Skills:">
       <span class="kw-cls">class</span>
-      <span style="color:var(--accent)">Skills</span>
-      <span style="color:var(--muted)">:</span>
+      <span class="typing" style="color:var(--accent)"></span>
+      <span class="cursor">_</span>
+      <span class="line"></span>
     </h2>
 
     <div class="skills-grid">
@@ -222,10 +219,11 @@
   <!-- PROJECTS -->
   <section id="projects">
 
-    <h2 class="section-title">
-      <span class="kw-pro">try</span>
-      <span style="color:var(--pro)">Projects</span>
-      <span style="color:var(--muted)">:</span>
+    <h2 class="section-title type-title" data-text="(Projects):">
+      <span class="kw-pro">catch</span>
+      <span class="typing" style="color:var(--pro)"></span>
+      <span class="cursor">_</span>
+      <span class="line"></span>
     </h2>
 
     <div class="projects-grid">
@@ -317,8 +315,11 @@
   </section>
   <!-- ── INTERESTS ── -->
   <section id="interests">
-    <h2 class="section-title">
-      <span class="kw-for">import</span>&nbsp;<span style="color:var(--accent3)">Interests</span>
+    <h2 class="section-title type-title" data-text="Interests">
+      <span class="kw-for">import</span>&nbsp;
+      <span class="typing" style="color:var(--accent3)"></span>
+      <span class="cursor">_</span>
+      <span class="line"></span>
     </h2>
     <div class="interests-grid">
       <div class="interest-card">
