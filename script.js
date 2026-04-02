@@ -56,6 +56,7 @@ document.querySelectorAll("a, button").forEach(el => {
   });
 });
 
+
 const hamburger = document.getElementById('hamburger');
   const mobileMenu = document.getElementById('mobileMenu');
   hamburger.addEventListener('click', () => {
@@ -67,4 +68,44 @@ const hamburger = document.getElementById('hamburger');
     mobileMenu.classList.remove('open');
   }
 
-  
+//Typing text
+
+const titles = document.querySelectorAll(".type-title");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting && !entry.target.classList.contains("done")) {
+
+      entry.target.classList.add("done");
+
+      const text = entry.target.getAttribute("data-text");
+      const target = entry.target.querySelector(".typing");
+      const line = entry.target.querySelector(".line");
+
+      let i = 0;
+
+      function type() {
+        if (i < text.length) {
+          target.textContent += text[i];
+          i++;
+          setTimeout(type, 100);
+        } else {
+          line.classList.add("active");
+        }
+      }
+
+      type();
+    }
+  });
+}, { threshold: 0.4 });
+
+titles.forEach(title => observer.observe(title));
+
+// HERO 
+const lines = document.querySelectorAll(".hero-line");
+
+lines.forEach((line, index) => {
+  setTimeout(() => {
+    line.classList.add("show");
+  }, index * 300); // delay between each line
+});
